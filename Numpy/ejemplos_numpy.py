@@ -46,7 +46,7 @@ print("Vector o Matriz?: \n {} ".format(a))
 # invoacndo los valores
 print("llamando a toda la final 1: \n {} ".format(a[0]))
 print("llamando a toda la final 3: \n {} ".format(a[2]))
-print("llamando a toda la columna 1: \n {} ".format(a[::1]))
+print("llamando a toda la columna 1: \n {} ".format(a[:,0]))
 
 # Iteradores 
 # for es un iterador
