@@ -61,6 +61,37 @@ Imprime las los vectores utilizando un formato para el print con la opción de \
     print("Vector de 1x10 con valores de 0 a 100 equidistantes: \n {} ".format(lineas10))
     print("Vector de 1x100 con valores de 0 a 10 equidistantes: \n {} ".format(lineas100))
 
+Adicionar, remomer y organizar elementos
+
+    arr = np.array([2,1,5,3,7,4,6,8])
+
+Organizando los numeros
+
+    arr_sort = np.sort(arr)
+
+    print("Vector original en desorden: {}\n".format(arr))
+    print("Vector con sus elementos ordenados: {}\n".format(arr_sort))
+
+Concatenar vectores
+
+    a=np.array([1,2,3,4])
+    b=np.array([5,6,7,8])
+
+    c=np.concatenate((a,b))
+    
+    print("Vector a = {} | Vector b = {}".format(a,b))
+    print("\nConcatenando a y b = {}".format(c))
+
+Filtrando valores dentro del vector creando la condición
+
+    five_up = (c > 5) 
+
+Se imprime con la condición
+
+    print("\nSe imprime el vector c pero solo los valores mayores a 5: {}".format((c[five_up])))
+
+# Matrices
+
 Crea una matriz diagonal de unos y se imprime.
     
     Mdiagonal = np.eye(7)
@@ -71,7 +102,6 @@ Se Crea un vector de vectores pero, es una matriz. Esta se imprime.
 
     a = np.array([[1,2,3,4],[5,6,7,8],[9,10,11,12]])
     print("Vector o Matriz?: \n {} ".format(a))
-
 
 
 # invocando los valores de una matríz

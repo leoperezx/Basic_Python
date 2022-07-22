@@ -31,16 +31,40 @@ lineas10 = np.linspace(0,100,10)
 # es como pedir 100 datos de 0 a 10
 lineas100 = np.linspace(0,10,100)
 
+# Adicionar, remomer y organizar elementos
+arr = np.array([2,1,5,3,7,4,6,8])
+# organizando los numeros
+arr_sort = np.sort(arr)
+
+print("Vector original en desorden: {}\n".format(arr))
+print("Vector con sus elementos ordenados: {}\n".format(arr_sort))
+
+# Concatenar vectores
+
+a=np.array([1,2,3,4])
+b=np.array([5,6,7,8])
+
+c=np.concatenate((a,b))
+print("Vector a = {} | Vector b = {}".format(a,b))
+print("\nConcatenando a y b = {}".format(c))
+
+# Filtrando valores dentro del vector
+# Se crea la condición
+five_up = (c > 5) 
+# Se imprime con la condición
+print("\nSe imprime el vector c pero solo los valores mayores a 5: {}".format((c[five_up])))
+
+
 # matriz diagonal de unos
 Mdiagonal = np.eye(7)
 
-print("Vector de 1x10 con valores de 0 a 100 equidistantes: \n {} ".format(lineas10))
+print("\nVector de 1x10 con valores de 0 a 100 equidistantes: \n {} ".format(lineas10))
 print("Vector de 1x100 con valores de 0 a 10 equidistantes: \n {} ".format(lineas100))
 
-print("Matriz diagonal de unos: \n {} ".format(Mdiagonal))
+print("\nMatriz diagonal de unos: \n {} ".format(Mdiagonal))
 
 a = np.array([[1,2,3,4],[5,6,7,8],[9,10,11,12]])
-print("Vector o Matriz?: \n {} ".format(a))
+print("\nVector o Matriz?: \n {} ".format(a))
 # se construye como un vector, pero es una matriz
 
 # invoacndo los valores
@@ -137,3 +161,4 @@ print("\nLista de los cuadrados usando 'list comprehesion': {}".format([i**2 for
 frase = "El perro de san roque no tiene rabo"
 erres = [i for i in frase if i=='r']
 print("\nLas erres en la frase '{}' son: {}".format((frase),len(erres)))
+
