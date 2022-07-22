@@ -95,6 +95,19 @@ print("primer elemento de 'it': {} ". format(next(it)))
 print("5 es el primer número de el objeto iterable 'it'")
 print("invoco al segundo elemento de 'it': {} ".format(next(it)))
 
+# Más matrices
+ 
+x = np.array([[1,2],[3,4],[5,6]])
+print("Escribe la matriz x:\n {}".format(x))
+
+# Presentación de una sub-matris de x:
+print("Presentación de una sub-matriz de x:\n {} ".format(x[np.array([1,-1])]))
+
+# Creación de un vector pero redimencionandolo a matriz
+y = np.arange(35).reshape(5,7)
+
+print("Se crea un vector pero se redimenciona a matriz con la funcion reshape()\n {}".format(y))
+
 # primera forma de hacer un switch (con if)
 # se invoca de la siguiente manera 
 # >>> opera1(suma,3,6)
@@ -125,6 +138,12 @@ print("la resta de 5 - 2 es: {}".format(opera1('resta',5,2)))
 print("la división de 15 / 3 es: {}".format(opera2('divide',15,3)()))
 print("la multiplicación de 7 * 9 es: {}".format(opera2('multiplica',7,9)()))
 
+Vector_A = [1,2]
+Vector_B = [1,1]
+
+print("\nLa suma del Vector_A y el Vector_B es:\n {}".format(Vector_A + Vector_B))
+
+print("\nUsando las funciones anteriores (Lambda): {}".format(opera1('suma',Vector_A, Vector_B)))
 
 # funcion zip()
 a=[3,4,5]
