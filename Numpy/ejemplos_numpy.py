@@ -96,7 +96,19 @@ print("5 es el primer número de el objeto iterable 'it'")
 print("invoco al segundo elemento de 'it': {} ".format(next(it)))
 
 # Más matrices
- 
+a = np.array([1,2,3,4,5,6])
+# conocer la dimensión de a
+print("La dimensión de 'a' = {} es: {}".format(a, a.shape))
+
+# Se puede expandir la dimensión utilisando la funsión np.expand_dims()
+# con axis=0, expande hacia las filas
+b = np.expand_dims(a, axis=0) # Vector fila
+# con axis=1, expande hacia las columnas
+c = np.expand_dims(a, axis=1) # Vector columna
+
+print("\nDimensiones de 'a': {}, 'b': {} y 'c': {}".format(a.shape, b.shape, c.shape))
+
+# creo una matriz
 x = np.array([[1,2],[3,4],[5,6]])
 print("Escribe la matriz x:\n {}".format(x))
 
